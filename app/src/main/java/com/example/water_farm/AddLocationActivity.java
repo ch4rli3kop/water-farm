@@ -28,6 +28,8 @@ public class AddLocationActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
+                //int locationID = ((GlobalData) getApplication()).getEntireLocationNum();
+
                 EditText location_name = (EditText)findViewById(R.id.input_location_name);
                 EditText location_ip = (EditText)findViewById(R.id.input_location_ip);
 
@@ -35,7 +37,7 @@ public class AddLocationActivity extends AppCompatActivity {
                 String ip = location_ip.getText().toString();
 
                 Intent myIntent = new Intent();
-                location_data_type location = new location_data_type(name, ip);
+                location_data_type location = new location_data_type(name, ip, 0);
 
                 myIntent.putExtra("location", (Serializable) location);
                 setResult(RESULT_OK, myIntent);
