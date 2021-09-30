@@ -24,15 +24,18 @@ public class AddDeviceActivity extends AppCompatActivity {
             public void onClick(View view) {
                 EditText device_name = (EditText)findViewById(R.id.input_device_name);
                 EditText device_port = (EditText)findViewById(R.id.input_device_port);
-
+                EditText device_location = (EditText)findViewById(R.id.editTextNumber);
 
                 String dname = device_name.getText().toString();
                 String dport = device_port.getText().toString();
+                int dlocationID = Integer.parseInt(device_location.getText().toString());
+
 
                 Intent myIntent = new Intent();
-                device_data_type device = new device_data_type(0, 0, dname, "locationName", dport);
+                device_data_type device = new device_data_type(0, dlocationID, dname, dport);
 
                 myIntent.putExtra("device", (Serializable) device);
+
                 setResult(RESULT_OK, myIntent);
                 Toast.makeText(getApplicationContext(), "장치 추가 완료!", Toast.LENGTH_SHORT).show();
                 finish();
