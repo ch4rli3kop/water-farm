@@ -36,7 +36,7 @@ public class LocationViewActivity extends AppCompatActivity {
         location = (location_data_type) myIntent.getSerializableExtra("location");
 
         // TextView Update
-        String locationName = location.getName();
+        String locationName = location.getLocationName();
         TextView textView = findViewById(R.id.setLocationName);
         textView.setText(locationName);
 

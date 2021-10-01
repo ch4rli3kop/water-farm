@@ -7,9 +7,9 @@ public class device_data_type implements Serializable{
     private int locationID;
     private String deviceName;
     private String locationName;
-    private String port;
+    private int port;
 
-    public device_data_type(int deviceID, int locationID, String deviceName, String port){
+    public device_data_type(int deviceID, int locationID, String deviceName, int port){
         super();
         this.deviceID = deviceID;
         this.locationID = locationID;
@@ -30,11 +30,11 @@ public class device_data_type implements Serializable{
         return this.deviceName;
     }
 
-    public String getLocationName(){
-        return this.locationName;
-    }
+//    public String getLocationName(){
+//        return this.locationName;
+//    }
 
-    public String getPort(){
+    public int getDevicePort(){
         return this.port;
     }
 
