@@ -19,15 +19,19 @@ public class location_data_type implements Serializable {
         this.IP = IP;
         this.locationID = locationID;
         this.devices = new ArrayList<device_data_type>();
-//        this.devices_num = devices_num;
+        this.devices_num = 0;
     }
 
-    public String getName(){
+    public String getLocationName(){
         return this.locationName;
     }
 
-    public String getIP(){
+    public String getLocationIP(){
         return this.IP;
+    }
+
+    public void setDevices(ArrayList<device_data_type> devices){
+        this.devices = devices;
     }
 
     public void addDevice(device_data_type device){
