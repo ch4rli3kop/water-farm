@@ -7,7 +7,7 @@
     tools:context=".DeviceViewActivity">
 
     <ProgressBar
-        android:id="@+id/de_progress_bar"
+        android:id="@+id/te_progress_bar"
         style="@style/CircularDeterminateProgressBar"
         android:layout_width="186dp"
         android:layout_height="192dp"
@@ -21,31 +21,31 @@
         tools:progress="60" />
 
     <TextView
-        android:id="@+id/de_text_view_progress"
+        android:id="@+id/te_text_view_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="@+id/de_progress_bar"
-        app:layout_constraintEnd_toEndOf="@+id/de_progress_bar"
-        app:layout_constraintStart_toStartOf="@+id/de_progress_bar"
-        app:layout_constraintTop_toTopOf="@+id/de_progress_bar"
+        app:layout_constraintBottom_toBottomOf="@+id/te_progress_bar"
+        app:layout_constraintEnd_toEndOf="@+id/te_progress_bar"
+        app:layout_constraintStart_toStartOf="@+id/te_progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/te_progress_bar"
         tools:text="60°C" />
 
     <Button
-        android:id="@+id/de_button_decr"
+        android:id="@+id/te_button_decr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="- 10도"
-        app:layout_constraintStart_toStartOf="@+id/de_progress_bar"
-        app:layout_constraintTop_toBottomOf="@+id/de_progress_bar" />
+        app:layout_constraintStart_toStartOf="@+id/te_progress_bar"
+        app:layout_constraintTop_toBottomOf="@+id/te_progress_bar" />
 
     <Button
-        android:id="@+id/de_button_incr"
+        android:id="@+id/te_button_incr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="+ 10도"
-        app:layout_constraintEnd_toEndOf="@+id/de_progress_bar"
-        app:layout_constraintTop_toBottomOf="@+id/de_progress_bar" />
+        app:layout_constraintEnd_toEndOf="@+id/te_progress_bar"
+        app:layout_constraintTop_toBottomOf="@+id/te_progress_bar" />
 
     <!--    습도 상태바&버튼-->
     <ProgressBar
@@ -174,7 +174,7 @@
 
     <!--    정보 텍스트 -->
     <TextView
-        android:id="@+id/text_de"
+        android:id="@+id/text_te"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="110dp"
@@ -230,7 +230,7 @@
     <!--    상세 그래프 이동 버튼 -->
 
     <Button
-        android:id="@+id/de_graph_btn"
+        android:id="@+id/te_graph_btn"
         android:layout_width="138dp"
         android:layout_height="128dp"
         android:background="#00ff0000"
@@ -266,7 +266,7 @@
         app:layout_constraintVertical_bias="0.752" />
 
     <Button
-        android:id="@+id/wa_grpah_btn"
+        android:id="@+id/wa_graph_btn"
         android:layout_width="119dp"
         android:layout_height="121dp"
         android:background="#00ff0000"
