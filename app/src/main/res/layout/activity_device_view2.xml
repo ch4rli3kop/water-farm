@@ -6,4 +6,275 @@
     android:layout_height="match_parent"
     tools:context=".DeviceViewActivity">
 
+    <ProgressBar
+        android:id="@+id/de_progress_bar"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="186dp"
+        android:layout_height="192dp"
+        android:layout_marginBottom="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231"
+        tools:progress="60" />
+
+    <TextView
+        android:id="@+id/de_text_view_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/de_progress_bar"
+        app:layout_constraintEnd_toEndOf="@+id/de_progress_bar"
+        app:layout_constraintStart_toStartOf="@+id/de_progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/de_progress_bar"
+        tools:text="60°C" />
+
+    <Button
+        android:id="@+id/de_button_decr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- 10도"
+        app:layout_constraintStart_toStartOf="@+id/de_progress_bar"
+        app:layout_constraintTop_toBottomOf="@+id/de_progress_bar" />
+
+    <Button
+        android:id="@+id/de_button_incr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ 10도"
+        app:layout_constraintEnd_toEndOf="@+id/de_progress_bar"
+        app:layout_constraintTop_toBottomOf="@+id/de_progress_bar" />
+
+    <!--    습도 상태바&버튼-->
+    <ProgressBar
+        android:id="@+id/hu_progress_bar"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="187dp"
+        android:layout_height="193dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="114dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233"
+        tools:progress="60" />
+
+    <TextView
+        android:id="@+id/hu_text_view_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/hu_progress_bar"
+        app:layout_constraintEnd_toEndOf="@+id/hu_progress_bar"
+        app:layout_constraintStart_toStartOf="@+id/hu_progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/hu_progress_bar"
+        tools:text="60%" />
+
+    <Button
+        android:id="@+id/hu_button_decr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- 10%"
+        app:layout_constraintStart_toStartOf="@+id/hu_progress_bar"
+        app:layout_constraintTop_toBottomOf="@+id/hu_progress_bar" />
+
+    <Button
+        android:id="@+id/hu_button_incr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ 10%"
+        app:layout_constraintEnd_toEndOf="@+id/hu_progress_bar"
+        app:layout_constraintTop_toBottomOf="@+id/hu_progress_bar" />
+
+    <!--    비료량 상태바&버튼-->
+    <ProgressBar
+        android:id="@+id/fe_progress_bar"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="0dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="74dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/text_wa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795"
+        tools:progress="60" />
+
+    <TextView
+        android:id="@+id/fe_text_view_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/fe_progress_bar"
+        app:layout_constraintEnd_toEndOf="@+id/fe_progress_bar"
+        app:layout_constraintStart_toStartOf="@+id/fe_progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/fe_progress_bar"
+        tools:text="60%" />
+
+    <Button
+        android:id="@+id/fe_button_decr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- 10%"
+        app:layout_constraintStart_toStartOf="@+id/fe_progress_bar"
+        app:layout_constraintTop_toBottomOf="@+id/fe_progress_bar" />
+
+    <Button
+        android:id="@+id/fe_button_incr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ 10%"
+        app:layout_constraintEnd_toEndOf="@+id/fe_progress_bar"
+        app:layout_constraintTop_toBottomOf="@+id/fe_progress_bar" />
+
+    <!--    수위 상태바&버튼-->
+    <ProgressBar
+        android:id="@+id/wa_progress_bar"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="180dp"
+        android:layout_height="193dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795"
+        tools:progress="60" />
+
+    <TextView
+        android:id="@+id/wa_text_view_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/wa_progress_bar"
+        app:layout_constraintEnd_toEndOf="@+id/wa_progress_bar"
+        app:layout_constraintStart_toStartOf="@+id/wa_progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/wa_progress_bar"
+        tools:text="60%" />
+
+    <Button
+        android:id="@+id/wa_button_decr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- 10%"
+        app:layout_constraintStart_toStartOf="@+id/wa_progress_bar"
+        app:layout_constraintTop_toBottomOf="@+id/wa_progress_bar" />
+
+    <Button
+        android:id="@+id/wa_button_incr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ 10%"
+        app:layout_constraintEnd_toEndOf="@+id/wa_progress_bar"
+        app:layout_constraintTop_toBottomOf="@+id/wa_progress_bar" />
+
+    <!--    정보 텍스트 -->
+    <TextView
+        android:id="@+id/text_de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="110dp"
+        android:text="온도"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <TextView
+        android:id="@+id/text_hu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="습도"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <TextView
+        android:id="@+id/text_fe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="81dp"
+        android:text="비료량"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584" />
+
+    <TextView
+        android:id="@+id/text_wa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수위"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.763"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584" />
+
+    <!--    상세 그래프 이동 버튼 -->
+
+    <Button
+        android:id="@+id/de_graph_btn"
+        android:layout_width="138dp"
+        android:layout_height="128dp"
+        android:background="#00ff0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
+
+    <Button
+        android:id="@+id/hu_graph_btn"
+        android:layout_width="134dp"
+        android:layout_height="132dp"
+        android:background="#00ff0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <Button
+        android:id="@+id/fe_graph_btn"
+        android:layout_width="115dp"
+        android:layout_height="113dp"
+        android:background="#00ff0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752" />
+
+    <Button
+        android:id="@+id/wa_grpah_btn"
+        android:layout_width="119dp"
+        android:layout_height="121dp"
+        android:background="#00ff0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.762" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

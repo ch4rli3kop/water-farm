@@ -56,6 +56,11 @@ public class LocationViewActivity extends AppCompatActivity {
                 String strText = (String) adapterView.getItemAtPosition(i);
                 Toast.makeText(getApplicationContext(), "lID : "+devices.get(i).getLocationID()+", dID : "+devices.get(i).getDeviceID()+", Name : "+devices.get(i).getDeviceName(), Toast.LENGTH_SHORT).show();
                 Log.d("tag", "lID : "+devices.get(i).getLocationID()+", dID : "+devices.get(i).getDeviceID()+", Name : "+devices.get(i).getDeviceName());
+
+                Intent deviceIntent = new Intent(LocationViewActivity.this, DeviceViewActivity.class);
+                device_data_type device = devices.get(i);
+                deviceIntent.putExtra("device", (Serializable) device);
+                startActivity(deviceIntent);
 //                Intent myIntent = new Intent(MainActivity.this, DeviceViewActivity.class);
 //
 //                location_data_type location = location_list.get(i);
