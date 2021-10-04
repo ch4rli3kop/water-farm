@@ -23,7 +23,7 @@
             android:name=".AddLocationActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".DeviceViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
