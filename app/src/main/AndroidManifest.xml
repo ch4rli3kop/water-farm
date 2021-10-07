@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WaterFarm">
         <activity
+            android:name=".GraphViewActivity"
+            android:exported="true" />
+        <activity
             android:name=".DeviceViewActivity"
             android:exported="true" />
         <activity

@@ -110,5 +110,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return devices;
     }
 
+    //public
+
     // ToDo : update device num
 }
